@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
+
+:root {
+    /* ### Primary */
+    --darkViolet: hsl(256, 26%, 20%);
+    --grayishBlue: hsl(216, 30%, 68%);
+
+    /* ### Neutral */
+    --veryDarkViolet: hsl(270, 9%, 17%);
+    --darkGrayishViolet: hsl(273, 4%, 51%);
+    --veryLightGray: hsl(0, 0%, 98%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Karla', sans-serif;
+}
+
+.mobile_nav {
+    display: none;
+}
