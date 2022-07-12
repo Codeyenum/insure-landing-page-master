@@ -14,7 +14,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;    
+    padding: 0;
 }
 
 html {
@@ -26,7 +26,7 @@ body {
     display: flex;
     padding: 0 1.5rem;
     flex-direction: column;
-    font-family: 'Karla', sans-serif;          
+    font-family: 'Karla', sans-serif;
     width: 100vw;
 }
 
@@ -48,6 +48,7 @@ h2,
 h3,
 h4 {
     font-family: 'DM Serif Display', serif;
+    font-weight: 400;
 }
 
 .mobile-nav_card {
@@ -59,23 +60,23 @@ h4 {
     background-color: var(--veryDarkViolet);
     font-size: 1.2rem;
     height: 100vh;
-    padding: 2rem 1.5rem;        
-    max-width: 100vw; 
+    padding: 2rem 1.5rem;
+    max-width: 100vw;
 
     position: absolute;
     top: 5.25rem;
-    left: 0;  
-    z-index: 3; 
+    left: 0;
+    z-index: 3;
 }
 
-.mobile-nav_card > div {
+.mobile-nav_card>div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%; 
+    width: 100%;
 }
 
-.mobile-nav_card > div a {
+.mobile-nav_card>div a {
     color: var(--veryLightGray);
     text-transform: uppercase;
     text-decoration: none;
@@ -133,6 +134,7 @@ button {
     height: 2.5rem;
     margin: 1rem 0;
     width: 50%;
+    position: relative;
     letter-spacing: .125rem;
 }
 
@@ -179,9 +181,7 @@ button:hover {
     padding: 2rem 0;
 }
 
-.approach {
-    /* display: flex; */
-    flex-direction: column;
+.approach {        
     margin-bottom: 2rem;
 }
 
@@ -317,4 +317,190 @@ footer a:hover {
 
 .hide {
     display: none;
+}
+
+@media screen and (min-width: 1020px) {
+
+    * {
+        max-width: 100%;
+    }
+
+    body {
+        max-width: 100vw;
+        padding: 0;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--veryLightGray);
+        margin: 0;
+        padding: 1rem 9rem;
+    }
+
+    .intro_section {
+        height: 100%;
+        margin: 0;
+        padding: 0 9rem;
+        width: 100%;
+    }
+
+    .intro_img {
+        position: absolute;
+        top: 10rem;
+        right: 8rem;
+        width: 37.5%;
+    }
+
+
+    .intro_content {
+        text-align: left;
+        width: 50%;
+        padding: 6rem 0;
+        position: static;
+    }
+
+    .intro_content h1 {
+        font-size: calc(.75rem + 4.3vw);
+        line-height: calc(.65rem + 4.3vw);
+        letter-spacing: .125rem;
+        margin: 3.5rem 0 2rem;
+    }
+
+    .intro_content p {
+        font-size: 1rem;
+    }
+
+    button {
+        color: var(--veryLightGray);
+        width: 32.5%;
+    }
+
+    .approach_section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: left;
+        padding: 8.5rem 9rem;
+    }
+
+    .approach_section h2 {
+        font-size: 4rem;
+        padding: 3rem 0;
+        margin: 1rem 0;
+        width: 100%;
+    }
+
+    .approach {
+        text-align: left;
+        width: 31%;
+    }
+
+    .approach img {
+        margin: 1.5rem 0;
+    }
+
+
+    .how-we-work {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    .how-we-work {
+        margin-top: 5rem;
+        padding: 0 5rem;
+        position: relative;
+    }
+
+    .how-we-work h2 {
+        border: none;
+        font-size: 3.65rem;
+        font-weight: 400;        
+        line-height: 4rem;
+        position: relative;
+        z-index: 2;
+
+        margin: 0;
+        width: 57%;
+    }
+
+    .how-we-work button {
+        width: 20%;
+    }
+
+    .how-we-work_img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+    }
+
+    .socials_container {        
+        flex-direction: row;
+        justify-content: space-between; 
+        width: 100%;       
+                    
+        padding: 3rem 0;
+        padding-bottom: .75rem;
+    
+        position: relative;
+        z-index: 2;
+    }
+    
+    .socials_container img {
+        margin-bottom: .75rem;
+    }
+
+    .socials {
+        gap: 1rem;
+        width: unset;         
+    }
+    
+    .socials a {        
+        margin: 0;
+    }
+    
+    footer {  
+        display: flex;  
+        flex-wrap: wrap;    
+        margin: 0;
+        padding: 0 9rem;        
+        text-align: center;
+    }
+
+    .footer_img {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        display: none;
+    }
+    
+    footer h4 {
+        margin: 2.25rem 0;
+    }
+    
+    footer a {
+        margin: .95rem 0;        
+    }
+    
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    footer nav {
+        text-align: left;
+        width: 25%;
+        margin-bottom: 2rem;
+    }
+
+    .attribution {
+        width: 100%;
+        margin: 0;
+    }
+    
 }
