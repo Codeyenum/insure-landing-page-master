@@ -144,7 +144,12 @@ button:hover {
     cursor: pointer;
 }
 
-.intro_img {
+picture {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro_img {    
     width: 100%;
 }
 
@@ -225,6 +230,7 @@ button:hover {
     position: absolute;
     top: 0;
     right: 0;
+    max-height: 270px;
     z-index: 0;
 }
 
@@ -243,7 +249,6 @@ footer {
     align-items: center;
 
     border-bottom: 1px solid var(--grayishBlue);
-    /* min-height: 173px; */
     padding: 5rem;
     padding-bottom: 1.5rem;
     position: relative;
@@ -255,6 +260,7 @@ footer {
 }
 
 .footer_img {
+    max-height: 220px;
     width: 100%;
     position: absolute;
     top: 0;
@@ -343,6 +349,7 @@ footer a:hover {
         height: 100%;
         margin: 0;
         padding: 0 9rem;
+        position: relative;
         width: 100%;
     }
 
@@ -351,6 +358,11 @@ footer a:hover {
         top: 10rem;
         right: 8rem;
         width: 37.5%;
+    }
+
+    .intro-left_img {
+        bottom: -55%;
+        top: unset;
     }
 
 
@@ -375,6 +387,11 @@ footer a:hover {
     button {
         color: var(--veryLightGray);
         width: 32.5%;
+    }
+
+    .intro-right_img {
+        bottom: unset;
+        top: 0;
     }
 
     .approach_section {
@@ -403,28 +420,27 @@ footer a:hover {
 
     .how-we-work {
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         align-items: center;
+        height: 250px;
         width: 100%;
-    }
-
-
-    .how-we-work {
         margin-top: 5rem;
         padding: 0 5rem;
-        position: relative;
+        position: relative;        
     }
 
     .how-we-work h2 {
-        border: none;
-        font-size: 3.65rem;
-        font-weight: 400;        
-        line-height: 4rem;
+        border: none;    
+        font-size: calc(.75rem + 3.3vw);
+        line-height: calc(.65rem + 3.3vw);       
+
+        font-weight: 400;
         position: relative;
         z-index: 2;
 
         margin: 0;
-        width: 57%;
+        margin-right: 22.5%;
+        width: 55%;
     }
 
     .how-we-work button {
@@ -467,17 +483,16 @@ footer a:hover {
         display: flex;  
         flex-wrap: wrap;    
         margin: 0;
-        padding: 0 9rem;        
+        padding: 0 9rem;           
         text-align: center;
     }
 
     .footer_img {
-        width: 100%;
+        width: 35%;
         position: absolute;
         top: 0;
         left: 0;
         z-index: 0;
-        display: none;
     }
     
     footer h4 {
@@ -502,6 +517,6 @@ footer a:hover {
         width: 100%;
         margin: 0;
     }
-    
+
     
 }

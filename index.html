@@ -32,10 +32,17 @@
     </header>
     <main>
         <section class="intro_section">
-            <img class="intro_img" srcset="./images/image-intro-desktop.jpg 1440w,
-            ./images/image-intro-mobile.jpg 720w" src="./images/image-intro-desktop.jpg">
+            <picture>
+                <source class="intro_img" srcset="./images/image-intro-desktop.jpg"
+                    media="(min-width: 1020px)">
+                <img class="intro_img" src="./images/image-intro-desktop.jpg" alt="">
+            </picture>
             <div class="intro_content">
-                <img class="intro-left_img" src="./images/bg-pattern-intro-left-mobile.svg" alt="">
+                <picture>
+                    <source class="intro-left_img" srcset="./images/bg-pattern-intro-left-desktop.svg"
+                        media="(min-width: 1020px)">
+                    <img class="intro-left_img" src="./images/bg-pattern-intro-left-mobile.svg" alt="">
+                </picture>
                 <h1>Humanizing your insurance.</h1>
 
                 <p>Get your life insurance coverage easier and faster. We blend our expertise
@@ -44,8 +51,11 @@
                 </p>
 
                 <button>VIEW PLANS</button>
-                <img class="intro-right_img" src="./images/bg-pattern-intro-right-mobile.svg" alt="">
-            </div>
+                <picture>
+                    <source class="intro-right_img" srcset="./images/bg-pattern-intro-right-desktop.svg"
+                        media="(min-width: 1020px)">
+                    <img class="intro-right_img" src="./images/bg-pattern-intro-right-mobile.svg" alt="">
+                </picture>
         </section>
         <section class="approach_section">
             <h2>We’re different</h2>
@@ -72,14 +82,21 @@
                 </p>
             </div>
             <div class="how-we-work">
-                <img class="how-we-work_img" src="./images/bg-pattern-how-we-work-mobile.svg" alt="">
+                <picture>
+                    <source class="how-we-work_img" srcset="./images/bg-pattern-how-we-work-desktop.svg"
+                        media="(min-width: 1020px)">
+                    <img class="how-we-work_img" src="./images/bg-pattern-how-we-work-mobile.svg" alt="">
+                </picture>
                 <h2>Find out more about how we work</h2>
                 <button>HOW WE WORK</button>
             </div>
         </section>
     </main>
     <footer>
-        <img class="footer_img" src="./images/bg-pattern-footer-mobile.svg" alt="">
+        <picture>
+            <source class="footer_img" srcset="./images/bg-pattern-footer-desktop.svg" media="(min-width: 1020px)">
+            <img class="footer_img" src="./images/bg-pattern-footer-mobile.svg" alt="">
+        </picture>
         <div class="socials_container">
             <img src="./images/logo.svg" alt="">
             <div class="socials">
