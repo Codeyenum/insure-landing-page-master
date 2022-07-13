@@ -61,6 +61,7 @@ h4 {
     font-size: 1.2rem;
     height: 100vh;
     padding: 2rem 1.5rem;
+    width: 100%;
     max-width: 100vw;
 
     position: absolute;
@@ -92,8 +93,12 @@ h4 {
 }
 
 .mobile-nav_card img {
-    margin: -2rem 0rem;
+    margin: -2rem 0rem;    
     max-width: 100vw;
+}
+
+.desktop_nav {
+    display: none;
 }
 
 .intro_section {
@@ -345,6 +350,41 @@ footer a:hover {
         padding: 1rem 9rem;
     }
 
+    .mobile_nav {
+        display: none;
+    }
+
+    .desktop_nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 45%;
+    }  
+    
+    .desktop_nav a {
+        color: var(--darkGrayishViolet);
+        font-size: .9rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;        
+    }
+
+    .desktop_nav a:hover {
+        color: var(--darkViolet);
+    }
+    
+    .desktop_nav button {
+        color: var(--darkViolet);
+        border: 2px solid var(--darkViolet);        
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .desktop_nav button:hover {
+        color: var(--veryLightGray);
+        background-color: var(--darkViolet);
+    }
+
     .intro_section {
         height: 100%;
         margin: 0;
@@ -420,7 +460,6 @@ footer a:hover {
 
     .how-we-work {
         display: flex;
-        /* justify-content: space-between; */
         align-items: center;
         height: 250px;
         width: 100%;
